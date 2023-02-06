@@ -1,0 +1,88 @@
+ERROR - 2023-01-17 12:09:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varchar(255) NOT NULL,
+	departement_updated_at datetime default current_timestam' at line 2 in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Database/Migrations/2023-01-17-113630_Departement.php(21): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Departement->up()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/education/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-17 12:14:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varchar(255) NOT NULL,
+	departement_updated_at datetime default current_timestam' at line 2 in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Database/Migrations/2023-01-17-113630_Departement.php(21): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Departement->up()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/education/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-17 12:20:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(100) NOT NULL,
+	updated_at datetime default current_timestamp on update current' at line 2 in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Database/Migrations/2023-01-17-113630_Departement.php(21): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Departement->up()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/education/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-17 12:23:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(255) NOT NULL,
+	updated_at datetime default current_timestamp on update current' at line 2 in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Database/Migrations/2023-01-17-113630_Departement.php(21): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Departement->up()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/education/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-17 12:37:17 --> mysqli_sql_exception: BLOB/TEXT column 'nom_departement' used in key specification without a key length in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Database/Migrations/2023-01-17-113630_Departement.php(21): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Departement->up()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/education/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-17 12:38:23 --> mysqli_sql_exception: BLOB/TEXT column 'nom_departement' used in key specification without a key length in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Database/Migrations/2023-01-17-113630_Departement.php(21): CodeIgniter\Database\Forge->createTable()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Departement->up()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/html/education/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

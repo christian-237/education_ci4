@@ -1,0 +1,340 @@
+ERROR - 2023-01-30 13:08:33 --> mysqli_sql_exception: Column 'id_departement' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 13:08:33 --> Column 'id_departement' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 13:27:07 --> mysqli_sql_exception: Column 'id_departement' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 13:27:07 --> Column 'id_departement' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 13:29:31 --> mysqli_sql_exception: Column 'id_departement' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 13:29:31 --> Column 'id_departement' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 13:30:04 --> mysqli_sql_exception: Column 'id_departement' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 13:30:04 --> Column 'id_departement' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 13:31:50 --> mysqli_sql_exception: Column 'id_departement' in order clause is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 13:31:50 --> Column 'id_departement' in order clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 13:32:05 --> mysqli_sql_exception: Column 'id_departement' in order clause is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 13:32:05 --> Column 'id_departement' in order clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 14:11:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`specialite`, CONSTRAINT `specialite_id_departement_foreign` FOREIGN KEY (`id_departement`) REFERENCES `departement` (`id_departement`)) in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/vendor/codeigniter4/framework/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/education/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/education/app/Controllers/SpecialiteController.php(65): CodeIgniter\Model->insert()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->create_specialite()
+#9 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-01-30 14:11:23 --> Cannot add or update a child row: a foreign key constraint fails (`education`.`specialite`, CONSTRAINT `specialite_id_departement_foreign` FOREIGN KEY (`id_departement`) REFERENCES `departement` (`id_departement`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/SpecialiteController.php(65): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->create_specialite()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 14:35:03 --> mysqli_sql_exception: Column 'statut' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 14:35:03 --> Column 'statut' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 14:35:06 --> mysqli_sql_exception: Column 'statut' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 14:35:06 --> Column 'statut' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 14:35:24 --> mysqli_sql_exception: Column 'statut' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 14:35:24 --> Column 'statut' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 14:35:25 --> mysqli_sql_exception: Column 'statut' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 14:35:25 --> Column 'statut' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 15:01:08 --> mysqli_sql_exception: Column 'statut' in field list is ambiguous in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 15:01:08 --> Column 'statut' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Specialite.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/SpecialiteController.php(31): App\Models\Specialite->findSpecialite()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SpecialiteController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 15:38:19 --> mysqli_sql_exception: Unknown column 'specialite' in 'field list' in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Enroulement.php(51): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/EnroulementController.php(35): App\Models\Enroulement->findenroulement()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\EnroulementController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 15:38:19 --> Unknown column 'specialite' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Enroulement.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/EnroulementController.php(35): App\Models\Enroulement->findenroulement()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\EnroulementController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-30 15:38:35 --> mysqli_sql_exception: Unknown column 'specialite' in 'field list' in /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/html/education/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/education/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/education/app/Models/Enroulement.php(51): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/education/app/Controllers/EnroulementController.php(35): App\Models\Enroulement->findenroulement()
+#6 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\EnroulementController->show()
+#7 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/education/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/education/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/education/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-01-30 15:38:35 --> Unknown column 'specialite' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Enroulement.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/EnroulementController.php(35): App\Models\Enroulement->findenroulement()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\EnroulementController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
