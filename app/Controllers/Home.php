@@ -17,8 +17,10 @@ class Home extends ResourceController {
         //echo view("home",$data);
         //return view('departement',$data);
         //return view('etudiant',$data);
-        //return view('specialite',$data);
-        return view('enroulement',$data);
+        return view('specialite',$data);
+        //return view('enroulement',$data);
+        //return view('login',$data);
+
 
     }
 }

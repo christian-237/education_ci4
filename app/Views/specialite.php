@@ -59,9 +59,9 @@
                     <input type="hidden" name="id_specialite" id="id_specialite">
                     <div class="form-group">
                         <div class="container mt-2 mb-2">
-                            <label for="specialite"> departement</label>
+                            <label> departement</label>
                         
-                            <select class="search form-control" id="id_departement" name="id_departement"></select>
+                            <select class="searchdepartement form-control" id="id_departement" name="searchdepartement"></select>
 
                         </div>
                         <!-- <label for="specialite"> departement</label> -->
@@ -334,20 +334,24 @@
             });
         }
 
-        $('.search').select2({
-            placeholder: '--- Search User ---',
-            ajax: {
-            url: '<?php echo base_url('/api/AutocompleteSearch');?>',
-            dataType: 'json',
-            delay: 250,
-            processResults: function(data){
-                return {
-                results: data
-                };
-            },
-            cache: true
-            }
-        });
+        url = $('meta[name=app-url]').attr("content") + "/api/searchdepartement";
+            $('.searchdepartement').select2({
+                placeholder: '--- Search User ---',
+                minimumInputLength: 1,
+                selectOnClose: true,
+                allowClear: true,
+                ajax: {
+                  url: url,
+                  dataType: 'json',
+                  delay: 250,
+                  processResults: function(data){
+                    return {
+                      results: data
+                    };
+                  },
+                  cache: true
+                }
+              });
     </script>
 </body>
 </html>

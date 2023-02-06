@@ -39,5 +39,20 @@ class Specialite extends Model
         $query = $builder->get();
         return $query->getRow();
     }
+
+
+    public function searchSelect2dpt($term) {
+        $data = null;
+        $builder = $this->db->table('departement'); 
+        if($term!=null){  
+            $query = $builder->like('nom_departement', $term)
+                        ->select('id_departement as id, nom_departement as text')
+                        ->where('statut', 'active')
+                        ->limit(5)->get();
+            $data = $query->getResult();
+        }
+
+        return $data;
+    }
  
 }

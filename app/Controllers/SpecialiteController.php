@@ -139,16 +139,11 @@ class SpecialiteController extends ResourceController
             return $this->failNotFound('Sorry! no specialite found');
     }
 
-    public function ajaxSearch()
-    {
+    public function searchdepartement(){
+       
         $data = [];
-        $db      = \Config\Database::connect();
-        $builder = $db->table('departement');   
-        $query = $builder->like('nom_departement')
-                    ->select('id_departement as id, nom_departement as text')
-                    ->limit(10)->get();
-        $data = $query->getResult();
-            
+        $data = $this->specialite->searchSelect2dpt($this->request->getVar('term'));
+
         echo json_encode($data);
     }
 }

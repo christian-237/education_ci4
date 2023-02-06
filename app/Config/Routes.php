@@ -56,7 +56,7 @@ $routes->post('ajouterspecialite', 'SpecialiteController::create_specialite');
 $routes->get('supprimerSpecialite/(:num)', 'SpecialiteController::delete_specialite/$1');
 $routes->post('modifierSpecialite','SpecialiteController::modifierSpecialite');
 
-$routes->get('AutocompleteSearch','SpecialiteController::ajaxSearch');
+$routes->get('searchdepartement','SpecialiteController::searchdepartement');
 //Enroulement
 $routes->get('listeEnroulement', 'EnroulementController::index');
 $routes->get('unEnroulement/(:num)', 'EnroulementController::show/$1');
