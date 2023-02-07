@@ -13,11 +13,11 @@ class Home extends ResourceController {
     public function index() {
         $data['title']   = "Level List";
         echo view('header',$data);
-        //return view('home',$data);
+        return view('home',$data);
         //echo view("home",$data);
         //return view('departement',$data);
         //return view('etudiant',$data);
-        return view('specialite',$data);
+        //return view('specialite',$data);
         //return view('enroulement',$data);
         //return view('login',$data);
 
