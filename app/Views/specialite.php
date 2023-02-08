@@ -61,7 +61,7 @@
                         <div class="container mt-2 mb-2">
                             <label> departement</label>
                         
-                            <select class="searchdepartement form-control" id="id_departement" name="searchdepartement"></select>
+                            <select class="searchdepartement form-control" id="id_departement" name="searchdepartement" style = "width:100%"></select>
 
                         </div>
                         <!-- <label for="specialite"> departement</label> -->

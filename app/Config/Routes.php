@@ -71,6 +71,12 @@ $routes->get('searchspecialite','EnroulementController::searchspecialite');
 });
 
 $routes->get('/', 'Home::index');
+$routes->get('space', 'Home::speciality');
+$routes->get('depart', 'Home::department');
+$routes->get('Nivea', 'Home::level');
+$routes->get('Etudian', 'Home::student');
+$routes->get('Enrollemen', 'Home::enrollment');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
