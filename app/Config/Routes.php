@@ -31,6 +31,12 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 //Niveau
 $routes->group("api", function ($routes) {
+
+$routes->post("register", "RegisterController::index");
+$routes->post("login", "LoginController::index");
+$routes->get("users", "UserController::index", ['filter' => 'authFilter']);
+
+
 $routes->get('listeNiveau', 'NiveauController::index');
 $routes->get('unNiveau/(:num)', 'NiveauController::show/$1');
 $routes->post('ajouterNiveau', 'NiveauController::create');
@@ -76,6 +82,7 @@ $routes->get('depart', 'Home::department');
 $routes->get('Nivea', 'Home::level');
 $routes->get('Etudian', 'Home::student');
 $routes->get('Enrollemen', 'Home::enrollment');
+$routes->get('log', 'Home::utilisateur');
 
 /*
  * --------------------------------------------------------------------

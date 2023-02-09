@@ -10,9 +10,7 @@ class Home extends ResourceController {
 
     }
     public function index() {
-        $data['title'] = " List";
-        //echo view('header');
-        return view('login',$data);
+        return view('login');
      }
     public function speciality() {
         $data['title'] = "specialite List";
@@ -41,6 +39,10 @@ class Home extends ResourceController {
         $data['title'] = "enroulement List";
         echo view('header');
         return view('enroulement',$data);
+
+    }
+    public function utilisateur() {
+        return view('user');
 
     }
 

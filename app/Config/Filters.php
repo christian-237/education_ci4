@@ -6,37 +6,30 @@ use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
-use CodeIgniter\Filters\InvalidChars;
-use CodeIgniter\Filters\SecureHeaders;
+
 
 class Filters extends BaseConfig
 {
-    /**
-     * Configures aliases for Filter classes to
-     * make reading things nicer and simpler.
-     */
-    public array $aliases = [
-        'csrf'          => CSRF::class,
-        'toolbar'       => DebugToolbar::class,
-        'honeypot'      => Honeypot::class,
-        'invalidchars'  => InvalidChars::class,
-        'secureheaders' => SecureHeaders::class,
+
+    public $aliases = [
+        'csrf'     => CSRF::class,
+        'toolbar'  => DebugToolbar::class,
+        'honeypot' => Honeypot::class,
+        'authFilter' => \App\Filters\AuthFilter::class,
     ];
 
     /**
      * List of filter aliases that are always
      * applied before and after every request.
      */
-    public array $globals = [
+    public $globals = [
         'before' => [
             // 'honeypot',
             // 'csrf',
-            // 'invalidchars',
         ],
-        'after' => [
+        'after'  => [
             'toolbar',
             // 'honeypot',
-            // 'secureheaders',
         ],
     ];
 

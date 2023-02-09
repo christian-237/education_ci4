@@ -5,11 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="app-url" content="<?php echo base_url('/');?>">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="<?php echo base_url('vendor/css/dataTables.bootstrap4.min.css');?>" rel="stylesheet" />
+	<script src="<?php echo base_url('vendor/js/jquery.dataTables.min.js');?>"></script>
+	<script src="<?php echo base_url('vendor/js/dataTables.bootstrap4.min.js');?>"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> -->
 
 </head>
 <body>
@@ -25,7 +28,7 @@
                 <div id="alert-div">
                   
                 </div>
-                <table class="table table-bordered" >
+                <table class="table table-striped table-bordered" id="dtBasicExample" >
                     <thead>
                         <tr>
                         	<th class="text-center" width="100">#</th>
@@ -302,6 +305,14 @@
         }
 
     </script>
+    	<script>
+
+        $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+        });
+        </script>
+
 
 </body>
 </html>

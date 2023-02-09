@@ -8,13 +8,9 @@
   <title>login</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </head>
 
 <body>
-
-  <section class="vh-100 gradient-custom">
     <div class="container py-5">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -49,7 +45,7 @@
               </div>
 
               <div>
-                <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
+                <p class="mb-0">Don't have an account? <a href="<?php echo base_url('log');?>" class="text-white-50 fw-bold">Sign Up</a></p>
               </div>
 
             </div>
@@ -57,13 +53,6 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- End your project here-->
-
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
 </body>
 
 </html>
