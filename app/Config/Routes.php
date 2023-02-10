@@ -82,7 +82,8 @@ $routes->get('depart', 'Home::department');
 $routes->get('Nivea', 'Home::level');
 $routes->get('Etudian', 'Home::student');
 $routes->get('Enrollemen', 'Home::enrollment');
-$routes->get('log', 'Home::utilisateur');
+$routes->get('log', 'Home::login');
+
 
 /*
  * --------------------------------------------------------------------
