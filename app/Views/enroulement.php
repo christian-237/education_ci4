@@ -113,6 +113,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     $("#levelTable").html("");
                     let enroulement = response;
@@ -161,6 +162,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let enroulement = response
                     $("#Annee").html(enroulement.Annee_academique);
@@ -184,6 +186,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let successHtml = '<div class="alert alert-success" role="alert"><b>enroulement Supprimer avec succès</b></div>';
                     $("#alert-div").html(successHtml);
@@ -236,6 +239,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 success: function(response) {
                     $("#saveEnroulement").prop('disabled', false);
@@ -283,6 +287,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let project = response
                     $("#alert-div").html("");
@@ -317,6 +322,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 //contentType: 'application/json',
                 success: function(response) {

@@ -34,7 +34,30 @@ class RegisterController extends BaseController
                 'message' => 'Invalid Inputs'
             ];
             return $this->fail($response , 409);
-             
         }
+
+    }
+
+    public function send_email(){
+        $to = $this->request->getVar('email');
+        $subject = $this->request->getVar('subject');
+        $message = $this->request->getVar('message');
+        
+        $email = \Config\Services::email();
+        $email->setTo($to); //Email destinataire
+        $email->setFrom('christianguemning7@gmail.com'); // Your email','Your Name
+        $email->attach('images/images.jpeg');
+
+        $email->setSubject($subject); // Subject Message
+        //var_dump($to,$subject,$message);
+        $email->setMessage($message); // this message is sent by destinataire
+        if ($email->send())
+            {
+                echo 'Email successfully sent';
+            }else{
+                $data = $email->printDebugger(['headers']);
+                print_r($data);
+            }
     }
 }
+    

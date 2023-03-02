@@ -1,3 +1,8 @@
+<script type="text/javascript">
+    if(localStorage.getItem('authorisation') != 'admin'){
+        window.location.href ="<?php echo base_url('errors');?>";
+    }
+</script>
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,6 +100,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     $("#levelTable").html("");
                     let niveau = response;
@@ -121,7 +127,7 @@
                         '</tr>';
                         $("#levelTable").append(colonne);
                     }
-      
+                    $('#dtBasicExample').DataTable();
                       
                 },
                 error: function(response) {
@@ -138,6 +144,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let niveau = response
                     $("#level_infos").html(niveau.nom_niveau);
@@ -146,7 +153,7 @@
       
                 },
                 error: function(response) {
-                    console.log(response.responseJSON)
+                    console.log(response)
                 }
             });
         }
@@ -159,13 +166,14 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let successHtml = '<div class="alert alert-success" role="alert"><b>Niveau Supprimer avec succès</b></div>';
                     $("#alert-div").html(successHtml);
                     showAllLevel();
                 },
                 error: function(response) {
-                    console.log(response.responseJSON)
+                    console.log(response)
                 }
             });
         }
@@ -203,6 +211,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 success: function(response) {
                     $("#saveLevel").prop('disabled', false);
@@ -243,6 +252,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let project = response
                     $("#alert-div").html("");
@@ -271,6 +281,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 //contentType: 'application/json',
                 success: function(response) {
@@ -304,14 +315,12 @@
             });
         }
 
-    </script>
-    	<script>
 
         $(document).ready(function () {
-        $('#dtBasicExample').DataTable();
-        $('.dataTables_length').addClass('bs-select');
+            // $('#dtBasicExample').DataTable();
+       // $('.dataTables_length').addClass('bs-select');
         });
-        </script>
+    </script>
 
 
 </body>

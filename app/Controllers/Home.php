@@ -46,4 +46,16 @@ class Home extends ResourceController {
         return view('connexion');
     }
 
+    public function register() {
+        return view('inscription');
+    }
+
+    public function password_chang() {
+        return view('password_change');
+    }
+
+    public function error() {
+        return view('page_error');
+     }
+
 }

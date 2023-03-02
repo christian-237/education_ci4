@@ -109,6 +109,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     $("#specialiteTable").html("");
                     let specialite = response;

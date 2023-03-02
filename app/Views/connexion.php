@@ -23,8 +23,8 @@
               <form  action="javascript:void(0)" id="from-save">
                 <input type="hidden" name="id_users " id="id_users ">
                 <div class="mb-md-2 mt-md-2">
-                  <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                  <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                  <h3 class="fw-bold mb-2 text-uppercase">se connecter</h3>
+                  <p class="text-white-50 mb-5"><a class="text-white" href="<?php echo base_url('email');?>"> Please enter your login and password!</a></p>
                   <div class="form-outline form-white mb-4">
                     <label for="email ">email</label>
                     <input type="text" class="form-control" id="email" name="email">
@@ -33,14 +33,12 @@
                     <label class="form-label" >Password</label>
                     <input type="password" class="form-control" id="password" name="password">
                   </div>
-                    
                     <button type="submit" name="submit" class="btn btn-outline-light btn-lg px-5">connexion</button>
+				            <a class="btn btn-outline-light btn-lg px-5" href="<?php echo base_url('inscrip');?>"> Register</a>
                   </div>
                 <div>
               </form>
-                <p class="mb-0"><button class="btn btn-outline-light px-5" >Register</button></p>
               </div>
-
             </div>
           </div>
         </div>
@@ -62,6 +60,7 @@
 
             $.ajax({
                 type: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 url: url,
                 cache: false,
                 data: formData,
@@ -78,8 +77,8 @@
                     // $("#password").val(""); // permet de recuperer l'id d'un champs du formulaire
 
                     // stockage des params
-                  localStorage.setItem('token', data.token);
-                  localStorage.setItem('authorisation', 'admin');
+                        localStorage.setItem('token', data.token);
+                        localStorage.setItem('authorisation', 'admin');
                         window.location.href="Nivea";
                     
                 },

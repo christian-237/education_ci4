@@ -22,7 +22,7 @@
                 <div id="alert-div">
                   
                 </div>
-                <table class="table table-bordered">
+                <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead>
                         <tr>
                         	<th class="text-center" width="100">#</th>
@@ -94,6 +94,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     $("#levelTable").html("");
                     let departement = response;
@@ -137,6 +138,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let departement = response
                     $("#departement_infos").html(departement.nom_departement);
@@ -159,6 +161,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let successHtml = '<div class="alert alert-success" role="alert"><b>departement Supprimer avec succès</b></div>';
                     $("#alert-div").html(successHtml);
@@ -205,6 +208,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 success: function(response) {
                     $("#savedepartement").prop('disabled', false);
@@ -246,6 +250,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let project = response
                     $("#alert-div").html("");
@@ -276,6 +281,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 //contentType: 'application/json',
                 success: function(response) {
@@ -310,6 +316,13 @@
                 }
             });
         }
+
+    </script>
+    <script>
+            $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+        });
     </script>
 </body>
 </html>

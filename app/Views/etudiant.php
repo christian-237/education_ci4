@@ -104,6 +104,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     $("#levelTable").html("");
                     let etudiant = response;
@@ -151,6 +152,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let etudiant = response
                     $("#nom_infos").html(etudiant.nom);
@@ -175,6 +177,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let successHtml = '<div class="alert alert-success" role="alert"><b>etudiant Supprimer avec succès</b></div>';
                     $("#alert-div").html(successHtml);
@@ -225,18 +228,19 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 success: function(response) {
                     console.log(response)
-                    // $("#saveEtudiant").prop('disabled', false);
-                    // let successHtml = '<div class="alert alert-success" role="alert"><b>etudiant Crée Avec Succès</b></div>';
-                    // $("#alert-div").html(successHtml);
-                    // $("#nom").val("");
-                    // $("#prenom").val("");
-                    // $("#date_naissance").val("");
-                    // $("#image").val("");
-                    // showAllEtudiant();
-                    // $("#form-modal").modal('hide');
+                    $("#saveEtudiant").prop('disabled', false);
+                    let successHtml = '<div class="alert alert-success" role="alert"><b>etudiant ajour Avec Succès</b></div>';
+                    $("#alert-div").html(successHtml);
+                    $("#nom").val("");
+                    $("#prenom").val("");
+                    $("#date_naissance").val("");
+                    $("#image").val("");
+                    showAllEtudiant();
+                    $("#form-modal").modal('hide');
                 },
                 error: function(response) {
                     /*
@@ -270,6 +274,7 @@
             $.ajax({
                 url: url,
                 method: "GET",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 success: function(response) {
                     let project = response
                     $("#alert-div").html("");
@@ -304,6 +309,7 @@
             $.ajax({
                 url: url,
                 method: "POST",
+                headers: {"Authorization": "Bearer " +localStorage.getItem("token")},
                 data: data,
                 //contentType: 'application/json',
                 success: function(response) {

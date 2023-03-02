@@ -32,42 +32,40 @@ $routes->set404Override();
 //Niveau
 $routes->group("api", function ($routes) {
 
-$routes->post("register", "RegisterController::index");
 $routes->post("login", "LoginController::index");
-$routes->get("users", "UserController::index", ['filter' => 'authFilter']);
+$routes->get("users", "UserController::index");
 
 
-$routes->get('listeNiveau', 'NiveauController::index');
-$routes->get('unNiveau/(:num)', 'NiveauController::show/$1');
-$routes->post('ajouterNiveau', 'NiveauController::create');
-$routes->get('supprimerNiveau/(:num)', 'NiveauController::delete/$1');
-$routes->post('modifierNiveau', 'NiveauController::modifierNiveau');
-
+$routes->get('listeNiveau', 'NiveauController::index', ['filter' => 'authFilter']);
+$routes->get('unNiveau/(:num)', 'NiveauController::show/$1', ['filter' => 'authFilter']);
+$routes->post('ajouterNiveau', 'NiveauController::create', ['filter' => 'authFilter']);
+$routes->get('supprimerNiveau/(:num)', 'NiveauController::delete/$1', ['filter' => 'authFilter']);
+$routes->post('modifierNiveau', 'NiveauController::modifierNiveau', ['filter' => 'authFilter']);
 //Departement
-$routes->get('listeDepartement','DepartementController::index');
-$routes->get('undepartement/(:num)','DepartementController::show/$1');
-$routes->post('ajouterDepartement','DepartementController::create');
-$routes->get('supprimerDepartement/(:num)','DepartementController::delete_departement/$1');
-$routes->post('modifierdepartement','DepartementController::modifier_Departement');
+$routes->get('listeDepartement','DepartementController::index', ['filter' => 'authFilter']);
+$routes->get('undepartement/(:num)','DepartementController::show/$1', ['filter' => 'authFilter']);
+$routes->post('ajouterDepartement','DepartementController::create', ['filter' => 'authFilter']);
+$routes->get('supprimerDepartement/(:num)','DepartementController::delete_departement/$1', ['filter' => 'authFilter']);
+$routes->post('modifierdepartement','DepartementController::modifier_Departement', ['filter' => 'authFilter']);
 //Etudiant
-$routes->get('listeEtudiant', 'EtudiantController::index');
-$routes->get('unEtudiant/(:num)', 'EtudiantController::show/$1');
-$routes->post('ajouterEtudiant', 'EtudiantController::create');
-$routes->get('supprimerEtudiant/(:num)','EtudiantController::deleteEtudiant/$1');
-$routes->post('modifierEtudiant','EtudiantController::modifierEtudiant');
+$routes->get('listeEtudiant', 'EtudiantController::index', ['filter' => 'authFilter']);
+$routes->get('unEtudiant/(:num)', 'EtudiantController::show/$1', ['filter' => 'authFilter']);
+$routes->post('ajouterEtudiant', 'EtudiantController::create', ['filter' => 'authFilter']);
+$routes->get('supprimerEtudiant/(:num)','EtudiantController::deleteEtudiant/$1', ['filter' => 'authFilter']);
+$routes->post('modifierEtudiant','EtudiantController::modifierEtudiant', ['filter' => 'authFilter']);
 //Specialite
-$routes->get('listeSpecialite', 'SpecialiteController::index');
-$routes->get('uneSpecialite/(:num)', 'SpecialiteController::show/$1');
-$routes->post('ajouterspecialite', 'SpecialiteController::create_specialite');
-$routes->get('supprimerSpecialite/(:num)', 'SpecialiteController::delete_specialite/$1');
-$routes->post('modifierSpecialite','SpecialiteController::modifierSpecialite');
+$routes->get('listeSpecialite', 'SpecialiteController::index', ['filter' => 'authFilter']);
+$routes->get('uneSpecialite/(:num)', 'SpecialiteController::show/$1', ['filter' => 'authFilter']);
+$routes->post('ajouterspecialite', 'SpecialiteController::create_specialite', ['filter' => 'authFilter']);
+$routes->get('supprimerSpecialite/(:num)', 'SpecialiteController::delete_specialite/$1', ['filter' => 'authFilter']);
+$routes->post('modifierSpecialite','SpecialiteController::modifierSpecialite', ['filter' => 'authFilter']);
 
 $routes->get('searchdepartement','SpecialiteController::searchdepartement');
 //Enroulement
-$routes->get('listeEnroulement', 'EnroulementController::index');
+$routes->get('listeEnroulement', 'EnroulementController::index', ['filter' => 'authFilter']);
 $routes->get('unEnroulement/(:num)', 'EnroulementController::show/$1');
 
-$routes->post('ajouterEnroulement', 'EnroulementController::create');
+$routes->post('ajouterEnroulement', 'EnroulementController::create', ['filter' => 'authFilter']);
 $routes->get('supprimerEnroulement/(:num)', 'EnroulementController::delete_Enroulement/$1');
 $routes->post('modifierEnroulement','EnroulementController::modifierEnroulement');
 
@@ -76,13 +74,22 @@ $routes->get('searchetudiant','EnroulementController::searchetudiant');
 $routes->get('searchspecialite','EnroulementController::searchspecialite');
 });
 
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::login');
 $routes->get('space', 'Home::speciality');
 $routes->get('depart', 'Home::department');
 $routes->get('Nivea', 'Home::level');
 $routes->get('Etudian', 'Home::student');
 $routes->get('Enrollemen', 'Home::enrollment');
+
 $routes->get('log', 'Home::login');
+$routes->get('email', 'Home::password_chang');
+$routes->get('inscrip', 'Home::register');
+$routes->get('errors', 'Home::error');
+
+$routes->post("register", "RegisterController::index");
+$routes->post("send", "RegisterController::send_email");
+// $routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
+
 
 
 /*

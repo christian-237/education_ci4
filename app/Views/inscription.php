@@ -46,7 +46,7 @@
  $('#from-save').on('submit', function(e) {
     event.preventDefault();
     var formData = new FormData(this);
-    let url = $('meta[name=app-url]').attr("content") + "/api/register";
+    let url = $('meta[name=app-url]').attr("content") + "/register";
     var email = $('#email').val();
     var password = $('#password').val(); 
     var confirm_password = $('#confirm_password').val();// Attribut l'id d'un champ a une variable
